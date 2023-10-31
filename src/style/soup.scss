@@ -1,0 +1,26 @@
+@import "bootstrap/scss/bootstrap";
+
+.image-gallery-container {
+    margin: 20px; /* Add margin to create space around the container */
+    margin-left: 30%;
+    
+  }
+  
+  .image-item {
+    margin: 40px; /* Add margin to create space between images */
+  }
+  
+  .image-item img {
+    width: 300px; /* Set the width of the images */
+    display: block; /* Ensure each image is on a new line */
+  }
+  
+  .image-item img:hover {
+    border: 5px solid #000; /* Add a border to the images on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  .soup-title{
+    font-size: xx-large;
+  }
+  
+  

@@ -1,0 +1,60 @@
+@import "bootstrap/scss/bootstrap";
+
+ ul{
+    font-size: x-large;
+    display: flex;
+    list-style-type:none;
+    justify-content: space-evenly;
+    margin: 5% -7rem;
+    padding: 0;
+    writing-mode: horizontal-tb;
+    border-radius: 10px 100px / 120px;
+    background-color: saddlebrown;
+    border-width: thick;
+   // margin-block-end: 10px;
+
+}
+ .color1{
+  color: white;
+ 
+}
+  .color2{
+    color: white;
+}
+
+.foodlist:hover{
+  color: #f5f0f0;
+  background-color: saddlebrown;
+  background: saddlebrown;
+ 
+  }
+  .foodlist{
+    color: white;
+    background-color: saddlebrown;
+  }
+
+  
+  .souplist {
+    display: none;
+  }
+  .show {
+    display: block;
+    
+  }
+  #sp{
+    color:black;
+  }
+   .breadlist{
+    display: block;
+  }
+ 
+  /* Custom style for dropdown items on hover */
+
+.foodlist .dropdown-toggle {
+  background-color: saddlebrown !important;
+  color: white !important;
+}
+.bg-primary {
+  background-color: saddlebrown !important;
+  //color: white !important;
+}
