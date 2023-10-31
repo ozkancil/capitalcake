@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
-import tombulbread from '../../assets/images/tombulEkmek.jpeg';
+//import tombulbread from '../../assets/images/tombulEkmek.jpeg';
 
 const BreadList = ({showList}) => {
     
@@ -11,10 +11,10 @@ const BreadList = ({showList}) => {
           </Link>
           {showList && (
             <ul>
-              <li><img src={tombulbread}/></li>
+              <li><img /></li>
               <li>Bread Type 2</li>
               <li>Bread Type 3</li>
-              <li>did this commit go through?</li>
+              <li>did this gitcommit go through</li>
             </ul>
           )}
         </div>
