@@ -1,22 +1,24 @@
-import React,{useState} from 'react';
-import { Link } from 'react-router-dom';
-import tombulbread from '../../assets/images/tombulEkmek.jpeg';
-
+import React from 'react';
+import tombulbread from '../../../assets/data/breadpics.json';
+import '../../../style/breadlist.scss'
+import { Outlet } from 'react-router-dom';
 const BreadList = ({showList}) => {
     
     return (
-        <div>
-          <Link>
-            <button style={{ backgroundColor: 'limegreen' }} disabled={!showList}>Click Image</button>
-          </Link>
+        <div className='breadlist'>
+         
           {showList && (
             <ul>
-              <li><img src={tombulbread} /></li>
-              <li>Bread Type 2</li>
-              <li>Bread Type 3</li>
-              <li>did this gitcommit go through</li>
+            {tombulbread.map((imageUrl,index)=>(
+              <li className='changeColor' key={index}>
+              <img src={imageUrl} alt={`Image ${index}`}/>
+              </li>
+                ))}
+             
+              
             </ul>
           )}
+          <Outlet/>
         </div>
       );
     }

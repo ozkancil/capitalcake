@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
     <h1>Welcome to Capital Foods!</h1>
-     <h4 class="shadow-lg p-3 mb-5 bg-white rounded"> We are baking a tradition not just food</h4> 
+     <h4 className="shadow-lg p-3 mb-5 bg-white rounded"> We are baking a tradition not just food</h4> 
      </div>
   )
 }

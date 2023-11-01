@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import images from '../../assets/images/baguette.png';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import food from '../../assets/data/image.json';
 import BreadList from '../food/breadList/breadlist';
-
+import '../../style/linkedinpageImages.scss';
 
 
 
@@ -15,14 +14,14 @@ import BreadList from '../food/breadList/breadlist';
     setShowList(!showList);
    }
   return (
-    <div>
+    <div >
     <Container>
-<div className='firstpic'>
+<div className='firstpic2'>
 <Link >
-<button style={{backgroundColor:'rgb(104, 119, 26)'}}> Click Image<img src={images} width={300}/>
+<button style={{backgroundColor:'rgb(104, 119, 26)'}} onClick={handleClickButton}> Click Image<img src={images} width={300}/>
 </button>
-<BreadList showList={showList}/>
 </Link>
+<BreadList className='showList' showList={showList}/>
   </div>
 </Container>
     </div>
