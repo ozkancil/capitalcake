@@ -25,7 +25,8 @@ const NavBar = () => {
               <Dropdown
                 onMouseEnter={() => setIsSubTabHovered(true)}
                 onMouseLeave={() => setIsSubTabHovered(false)}>
-                <Dropdown.Toggle to="/food" className="foodlist">FoodList</Dropdown.Toggle>
+                <Dropdown.Toggle
+                Toggle to="/food" className="foodlist">FoodList</Dropdown.Toggle>
 
 
                 <Dropdown.Menu>
@@ -38,10 +39,10 @@ const NavBar = () => {
                   <Link to="/food/soup" id="sp">Soup</Link>
                 </Dropdown.Item>
 
-                <Dropdown.Item
-                  className={`breadlist ${isSubTabHovered ? 'show' : ''}`}
-                  onMouseEnter={() => setIsSubTabHovered(true)}
-                  onMouseLeave={() => setIsSubTabHovered(false)}
+                  <Dropdown.Item
+                  //className={`breadlist ${isSubTabHovered ? 'show' : ''}`}
+                  //onMouseEnter={() => setIsSubTabHovered(true)}
+                  //onMouseLeave={() => setIsSubTabHovered(false)}
                 >
                   <Link to="/food/bread" id="sp">Bread</Link>
                 </Dropdown.Item>
@@ -57,3 +58,5 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
